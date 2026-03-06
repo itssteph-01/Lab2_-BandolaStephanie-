@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Personal Webpage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">GROUP 4</div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#register" class="nav-link">Register</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Precious Wency Maputol <div>Yhana Ledesma</div>
+<div>Stephanie Bandola</div>
+<div>Charize Lucio</div>
+<div>Clarisse Muli</div>
+<div>Apple Jenn Magsino</div>      
+</h1>
+    </div>
+  </header>
+
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2 class="section-title">About Us</h2>
+      <div class="about-card">
+        <p>Just a group of girls who love spending time together, laughing at the smallest things, and supporting each other through everything.</p>
+      </div>
+
+      <h2 class="section-title interests-title">Our Interests</h2>
+      <div class="interests-grid">
+        <div class="interest-card">
+          <div class="interest-icon">💻</div>
+          <h3>Web Development</h3>
+          <p>Building responsive and interactive web applications</p>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon">💃</div>
+          <h3>Dancing</h3>
+          <p>Expressing creativity and emotion through movement and rhythm</p>
+        </div>
+        <div class="interest-card">
+          <div class="interest-icon">🎵</div>
+          <h3> Singing</h3>
+          <p>Expressing emotions through vocal performance and music</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="register" class="register-section">
+    <div class="container">
+      <h2 class="section-title">Join Our Community</h2>
+      <p class="section-subtitle">Register to stay updated and get exclusive content</p>
+      
+      <div class="form-wrapper">
+        <form id="registerForm" action="https://formspree.io/f/mojkqjed" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="dob">Date of Birth</label>
+              <input type="date" id="dob" name="dob">
+            </div>
+
+            <div class="form-group">
+              <label for="age">Age</label>
+              <input type="number" id="age" name="age" min="1" placeholder="Enter your age">
+            </div>
+          </div>
+
+          <button type="submit" class="submit-btn">Register Now</button>
+        </form>
+        <p id="formMessage" class="success-message">✓ Thank you! Your registration has been received.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Group 4 BSIT - 1B. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
